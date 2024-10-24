@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="white">p</div>
+    <div class="pink">p</div>
+    <section class="main_info">
+      <button class="add_actor" id="addActor">add Actore</button>
+      <p class="main_info_text">ACTORS</p>
+      <div class="cards" id="cards">
+        <!-- <div class="card">
+          <img
+            class="img_actor"
+            src="https://img.freepik.com/free-photo/beautiful-ai-natural-landscape_23-2151839261.jpg"
+            alt=""
+          />
+          <p class="name_actor">Матіяш Миола</p>
+          <div class="social_media">
+            <a class="media" href=""
+              ><img class="img_media" src="./icon/Instagram Circle.png" alt=""
+            /></a>
+            <a class="media" href=""
+              ><img class="img_media" src="./icon/Facebook Circled.png" alt=""
+            /></a>
+            <a class="media" href=""
+              ><img class="img_media" src="./icon/Twitter Circled.png" alt=""
+            /></a>
+          </div>
+        </div> -->
+      </div>
+      <form action="" id="form" class="form unvisible">
+        <button id="closeBtn" class="close_btn">Close</button>
+        <p class="title_form">Add new actor</p>
+        <div class="name_box">
+          <label>
+            <span>Firstname and Lastname of the actor</span>
+            <input
+              class="valid_input"
+              type="text"
+              id="fullName"
+              required
+              pattern="[A-Za-z]+ [A-Za-z]+"
+              placeholder="Лише латинь"
+            />
+          </label>
+          <label>
+            <span>Link to the actor's photo</span>
+            <input
+              class="valid_input"
+              type="url"
+              id="actorPhotoForm"
+              required
+              pattern="https?://.*\.(jpg|jpeg|png|gif|bmp|webp|svg)$"
+              placeholder="URL адреса на фото"
+            />
+          </label>
+        </div>
+        <label for="">
+          <input
+            class="input valid_input"
+            type="url"
+            id="instUrl"
+            required
+            pattern="https?://(www\.)?instagram\.com/[A-Za-z0-9._%+-]+/?$"
+            placeholder="Посилання на instagram"
+          />
+          <span>Link to Instagram</span>
+        </label>
+        <label for="">
+          <input
+            class="input valid_input"
+            type="url"
+            id="faceUrl"
+            required
+            pattern="https?://(www\.)?facebook\.com/[A-Za-z0-9._%+-]+/?$"
+            placeholder="Посилання на facebook"
+          />
+          <span>Link to Facebook</span>
+        </label>
+        <label for="">
+          <input
+            class="input valid_input"
+            type="url"
+            id="twitUrl"
+            required
+            pattern="https?://(www\.)?twitter\.com/[A-Za-z0-9_]{1,15}/?$"
+            placeholder="Посилання на twitter"
+          />
+          <span>Link to Twitter</span>
+        </label>
+        <button class="addBtn" id="addBtnFrm">add actor</button>
+      </form>
+      <div class="choice">
+        <p class="logo_text">YOU CHOOSED</p>
+        <ul class="choosed_list" id="choosedList"></ul>
+        <!-- <button class="delete_btn" id="deleteBtn">Delete actors</button> -->
+      </div>
+    </section>
+    <script src="./home.js"></script>
+    <script src="./hw.js"></script>
+  </body>
+</html>
